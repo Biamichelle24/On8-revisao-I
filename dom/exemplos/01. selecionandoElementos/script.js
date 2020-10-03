@@ -31,3 +31,11 @@
    ** Sempre da prefêrencia utilizar este **
 */
 
+/*
+  HTMLCollection
+  https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLCollection
+
+  NodeList
+  https://developer.mozilla.org/pt-BR/docs/Web/API/NodeList
+
+*/
