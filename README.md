@@ -188,7 +188,7 @@ elemento.focus()
 
 ## Links úteis
 
-- [MasterClass - DOM (Rockseat) ](https://www.youtube.com/watch?v=UftSB4DaRU4&t=4s)
+- [MasterClass - DOM (Rocketseat) ](https://www.youtube.com/watch?v=UftSB4DaRU4&t=4s)
 - [Introdução a DOM (Curso em Video) ](https://www.youtube.com/watch?v=UftSB4DaRU4&t=4s)
 - [Eventos DOM (Curso em Video)](https://www.youtube.com/watch?v=wWnBB-mZIvY)
 
