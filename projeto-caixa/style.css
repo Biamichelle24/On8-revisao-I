@@ -1,0 +1,155 @@
+:root {
+  --color-primary: #7f4c9b;
+  --color-secondery: #fff;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+}
+
+main {
+  background-color: #d8d2dc;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.titulo__principal {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8rem;
+  text-align: center;
+  color: var( --color-primary);
+}
+
+.section__caixa {
+  display: flex;
+  max-width: 960px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.titulo {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--color-secondery);
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 1rem 1rem 0px 0px;
+  text-align: center;
+}
+
+.inputs,
+.label__total {
+  display: block;
+  background: var(--color-secondery);
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+.btn__incluir {
+  background: var(--color-primary);
+  color: var(--color-secondery);
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  width: 100px;
+  align-self: flex-end;
+}
+
+.produtos {
+  flex: 1;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.barra__infos {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background: #c4c4c4;
+}
+
+th {
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #908f8f;
+  padding: 0.5rem;
+}
+td {
+  color: #5d5d5d;
+  font-size: 1.5rem;
+  text-align: center;
+  table-layout: fixed;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all ease 0.7s;
+}
+
+.barra__infos th {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+
+.lista___produtos td {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.produto {
+  border: 1px solid;
+}
+
+.box__valorTotal,
+.box__desconto {
+  width: 150px;
+  margin: 1rem;
+}
+
+.box__valorTotal {
+  background-color: var(--color-primary);
+  color: var(--color-secondery);
+  border-radius: 8px;
+}
+
+#desconto {
+    max-width: 140px;
+    border: none;
+    display: block;
+    height: 50px;
+    background: var(--color-secondery);
+    font-size: 1.8rem;
+    padding: 0 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.box__valorTotal .valor {
+  font-size: 2.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.pagamento {
+  display: flex;
+  justify-content: flex-end;
+}
