@@ -8,8 +8,19 @@
    - callback: o que ele vai excutar quando o evento ocorrer
 
   Obs: event é passado automaticamente como argumento da callback chamada nos manipuladores de eventos para fornecer recursos e informações extras sobre os eventos que o usuário ativa.
-
 */
+
+const btn = document.querySelector("#btnContar");
+const paragrafo = document.querySelector("#contador");
+let count = 0;
+
+const contador = () => {
+  count++;
+  console.log(count);
+  paragrafo.innerText = count;
+};
+
+// btn.addEventListener("click", contador);
 
 /*
   context.removeEventListener(event, callback)
@@ -19,8 +30,13 @@
    - callback: o que ele vai excutar quando o evento ocorrer
 */
 
-/* Exemplo de alguns eventos  */
+const façaAlgo = function(event){
+   console.log(event.target)
+}
 
+btn.addEventListener("click", façaAlgo);
+btn.removeEventListener('click', façaAlgo )
+/* Exemplo de alguns eventos  */
 /*
   click
 */
@@ -32,10 +48,26 @@
 /*
   Blur
 */
+const input = document.querySelector("#nome")
+
+// const exibirNome = () =>{
+//  console.log(input.value)
+// }
+
+// input.addEventListener('blur', exibirNome)
+
+
 
 /*
- onChange
+ Change
 */
+
+const exibirNome = (e) =>{
+ let value = e.target.value 
+  console.log('chamou onChange', value) 
+}
+
+input.addEventListener('input', exibirNome) 
 
 
 /*

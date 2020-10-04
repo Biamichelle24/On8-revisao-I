@@ -12,3 +12,19 @@
 
 //seu código vai aqui
 
+const input = document.querySelector("input")
+
+const botao = document.querySelector("button")
+
+const addSonho = () =>{
+
+  const body = document.querySelector("body")
+  const div = document.createElement('div')
+
+  body.appendChild(div)
+  div.textContent = input.value
+
+}
+
+botao.addEventListener('click', addSonho)
+
