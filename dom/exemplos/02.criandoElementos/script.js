@@ -28,15 +28,3 @@ const div = document.createElement('div')
 */
 
 main.append(titulo, div)
- const main = document.querySelector('.root')
- main.appendChild(titulo)
- main.appendChild(div)
-
-/*
-  append() 
-    - Adiciona elementos HTML e texto no DOM.
-
-  Obs: Aceita mais de um elemento como argumento e retorna undefined
-*/
-
-main.append(titulo, div)
