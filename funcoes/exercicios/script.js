@@ -3,25 +3,25 @@
       Caso a fruta passada por parametro for maçã retorne no console: “Não vendemos esta fruta aqui”. Caso kiwi, retorne: “Estamos com escassez de kiwis” e caso melancia, retorne: “Aqui está, são 3 reais o quilo”. Teste com estas três opções e verifique o console do seu navegador. Crie também um default, que retornará uma mensagem de erro no console.
 */
 
-// const fruta = prompt("Digite aqui sua fruta desejada")
+const fruta = prompt("Digite aqui sua fruta desejada")
 
-// function receberFruta(fruta) {
-//   // fruta = prompt("Digite aqui sua fruta desejada")
-//   switch (fruta) {
-//     case "kiwi":
-//       alert("Estamos com escassez de kiwis");
-//       break;
-//     case "melancia":
-//       alert("Aqui está, são 3 reais o quilo");
-//       break;
-//     case "maçã":
-//       alert("Não vendemos esta fruta aqui");
-//     default:
-//       alert("Opção invalida");
-//   }
-// }
+function receberFruta(fruta) {
+  switch (fruta) {
+    case "kiwi":
+      alert("Estamos com escassez de kiwis");
+      break;
+    case "melancia":
+      alert("Aqui está, são 3 reais o quilo");
+      break;
+    case "maçã":
+      alert("Não vendemos esta fruta aqui");
+    default:
+      alert("Opção invalida");
+  }
+}
 
-// console.log(receberFruta("laranja"));
+console.log(receberFruta("laranja"));
+console.log(receberFruta(fruta));
 
 /* 
   2.  Crie uma função com as seguintes características:
@@ -31,15 +31,15 @@
       3. O retorno da função deve ser a multiplicação dos 3 parametros, somando `2` ao resultado da multiplicação.
  */
 
-// const multi = (a, b, c) => {
-//   if (a === undefined || b === undefined || c === undefined) {
-//     return "Preencha todos os valores corretamente!";
-//   }
-//     return a * b * c + 2;
+const multi = (a, b, c) => {
+  if (a === undefined || b === undefined || c === undefined) {
+    return "Preencha todos os valores corretamente!";
+  }
+    return a * b * c + 2;
 
-// };
+};
 
-// console.log(multi(2, 3, 2));
+console.log(multi(2, 3, 2));
 
 /* 
   3. Crie uma função que receba três numeros por parametros e retorne o maior deles, caso os números sejam iguais retorne a string "Todos os números são iguais".
@@ -59,7 +59,7 @@ function maiorNumero(a, b, c) {
   // } else {
   //   return "todos os números são iguais";
   // }
-
+  // OU
   return Math.max(a, b, c)
 }
 

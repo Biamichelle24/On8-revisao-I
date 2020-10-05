@@ -25,6 +25,26 @@ const addSonho = () =>{
   div.textContent = input.value
 
 }
-
 botao.addEventListener('click', addSonho)
+
+// OU
+
+const input = document.querySelector('#input');
+const botaoAdd = document.querySelector('#add');
+
+function addSonho() {
+  const receberSonho = input.value;
+
+  const div = document.createElement('div');
+  div.innerText = receberSonho;
+  
+  const lista = document.querySelector('#lista');
+  lista.appendChild(div);
+
+  input.value = '';
+}
+
+botaoAdd.addEventListener('click', addSonho)
+
+
 

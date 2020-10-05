@@ -20,7 +20,7 @@ const contador = () => {
   paragrafo.innerText = count;
 };
 
-// btn.addEventListener("click", contador);
+btn.addEventListener("click", contador);
 
 /*
   context.removeEventListener(event, callback)
@@ -40,26 +40,21 @@ btn.removeEventListener('click', façaAlgo )
 /*
   click
 */
-
-/*
- submit
-*/
+btn.addEventListener("click", contador);
 
 /*
   Blur
 */
 const input = document.querySelector("#nome")
 
-// const exibirNome = () =>{
-//  console.log(input.value)
-// }
+const exibirNome = () =>{
+ console.log(input.value)
+}
 
-// input.addEventListener('blur', exibirNome)
-
-
+input.addEventListener('blur', exibirNome)
 
 /*
- Change
+ Input
 */
 
 const exibirNome = (e) =>{

@@ -6,9 +6,9 @@
 /*
   Funções anônimas são aquelas em que o nome da função não é definido
 */
-// function(){
-//  console.log('estou executando alguma coisa')
-// }
+function(){
+ console.log('estou executando alguma coisa')
+}
 
 // Funções Literal
 function mostrarMensagem() {
@@ -106,9 +106,9 @@ console.log(calcular);
 */
 console.log(comidaFavorita("pudim"));
 
-// function comidaFavorita(comida){
-//   return `sua comida favorita é ${comida}`
-// }
+function comidaFavorita(comida){
+  return `sua comida favorita é ${comida}`
+}
 
 const comidaFavorita = (comida) => {
   return `sua comida favorita é ${comida}`;
